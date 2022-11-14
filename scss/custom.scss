@@ -1,0 +1,103 @@
+$utilities:(
+    "width": (
+        property: width,
+        class: w,
+        values: (
+          25: 25%,
+          50: 50%,
+          75: 75%,
+          100: 100%,
+          auto: auto
+        )
+      )
+);
+
+div{
+    border: 1px solid red;
+}
+
+//Tamaño de los parrafos
+$p: 18px;
+
+//Tamaño titulos 
+$h1-font-size: 56px;
+$h2-font-size: 16px;
+$h3-font-size: $p;
+
+//Color principal
+$primary: #5E3BEE;
+
+header{
+    padding: 0px 64px;
+}
+
+
+ //Padding del header
+ #header{
+    padding: 100px 64px;
+  }
+
+//Le ponemos un estilo al boton primario
+
+.btn-bd-primary {
+
+    /* Auto layout */
+    color: white;
+    border: round($number: 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 32px;
+    gap: 8px;
+
+    width: 128px;
+    height: 52px;
+
+    /* Primary */
+    background: $primary;
+    border-radius: 4px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+//SKILL
+//Padding del skill
+#skill{
+    padding: 112px 64px;
+}
+
+.padding{
+    padding-bottom:80px;
+}
+
+
+//Padding aboutMe
+#aboutMe{
+    padding: 100px 64px;
+}
+
+//Padding portfolio
+#portfolio{
+    padding: 112px 64px;
+}
+
+//Padding customer
+#customer{
+    padding: 112px 64px;
+}
+
+//Padding contact
+#contact{
+    padding: 112px 64px;
+}
+
+footer{
+    padding: 80px 64px;
+}
+@import "../scss_bootstrap/bootstrap.scss"
+
+

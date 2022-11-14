@@ -5,17 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PR2 ​Maquetació amb Bootstrap</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="../scss/custom.css">
+
 
     
-    <!-- Libreria de Bootstrap css -->
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
-    <!-- JS para Bootstrap -->
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
 </head>
 <body>
     <header>
@@ -24,7 +17,7 @@
                 <div class="row">
                     <nav class="navbar navbar-expand-lg">
                         <div class="col-4">
-                            <img src="./imagen/Logo.png" alt="">
+                            <img class="w-25" src="../imagen/Logo.png" alt="">
                         </div>
                             <div  class="col-7">
                                 <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -57,51 +50,56 @@
                     <div class="row">
                         <div class="d-flex">
                             <div class="col-6">
-                                <h2>Hey, I am John</h2>
-                                <h1>I create product design and brand experience</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                                <button>Get In Touch</button>
+                                <h2 class="fs-2">Hey, I am John</h2>
+                                <h1 class="fs-1">I create <span class="text-primary">product design</span> and brand experience</h1>
+                                <p class="fs-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                                <button class="btn-bd-primary"> <span class="fs-2">Get In Touch</span></button>
                             </div>
                             <div class="col-6">
-                                <img src="./imagen/Group 11 1.png" class="img-fluid" alt="">
+                                <img src="../imagen/Group 11 1.png" class="img-fluid" alt="">
                             </div>
                         </div>
                     </div>
                 </section>
                 
                 <section id="skill">
-                        <div class="row">
-                            <div class="col-12">
+                        <div class="row ">
+                            <div class="col-12 padding">
                                 <h4>My Skills</h4>
                                 <h1>My Expertise</h1>
                             </div>
+
                             <div class="col-3">
-                                <img src="./imagen/product-chain 1.png" alt="">
+                                <img src="../imagen/product-chain 1.png" alt="">
                                 <h3>Strategy & Direction</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad optio quos at repellat iusto voluptatibus temporibus vero pariatur autem.</p>
                             </div>
+                            
                             <div class="col-3">
-                                <img src="./imagen/tag 1.png" alt="">
+                                <img src="../imagen/tag 1.png" alt="">
                                 <h3>Branding & Logo</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad optio quos at repellat iusto voluptatibus temporibus vero pariatur autem.</p>
                             </div>
+
                             <div class="col-3">
-                                <img src="./imagen/feather-pen 1.png" alt="">
+                                <img src="../imagen/feather-pen 1.png" alt="">
                                 <h3>UI & UX Design</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad optio quos at repellat iusto voluptatibus temporibus vero pariatur autem.</p>
                             </div>
+
                             <div class="col-3">
-                                <img src="./imagen/arrows.png" alt="">
+                                <img src="../imagen/arrows.png" alt="">
                                 <h3>Webflow Development</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad optio quos at repellat iusto voluptatibus temporibus vero pariatur autem.</p>
                             </div>
+                            
                         </div>
                 </section>
 
-                <section>
+                <section id="aboutMe">
                     <div class="row">
                         <div class="col-6">
-                            <img src="./imagen/About Me.png" class="img-fluid" alt="">
+                            <img src="../imagen/About Me.png" class="img-fluid" alt="">
                         </div>
                         <div class="col-6">
                             <h4>About</h4>
@@ -111,7 +109,7 @@
                     </div>
                 </section>
 
-                <section>
+                <section id="portfolio">
                     <div class="row">
                         <div class="col-6">
                             <h4>Recent Projects</h4>
@@ -122,58 +120,61 @@
                             <button>Visit my Dribble</button>
                         </div>
                         
-                        <div class="col-4 card"><img class="img-thumbnail" src="./imagen/Image.png" alt="">
+                        <div class="col-4 card"><img class="img-thumbnail" src="../imagen/Image.png" alt="">
                             <h3>Ahuse</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
                             <p>View In Dribbble</p>
                         </div>
-                        <div class="col-4 card"><img class="img-thumbnail" src="./imagen/Image(1).png" alt="">
+                        <div class="col-4 card"><img class="img-thumbnail" src="../imagen/Image(1).png" alt="">
                             <h3>App Dashboard</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
                             <p>View In Dribbble</p>
                         </div>
-                        <div class="col-4 card"><img class="img-thumbnail" src="./imagen/Image(2).png" alt="">
+                        <div class="col-4 card"><img class="img-thumbnail" src="../imagen/Image(2).png" alt="">
                             <h3>Easy Rent</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
                             <p>View In Dribbble</p>
                         </div>
                     </div>
-
                 </section>
+
+                <section id="customer">
                     <div class="row">
                         <div class="col-12">
                             <h4>Clients Feedback</h4>
                             <h1>Customer testimonial</h1>
                         </div>
                         <div class=" border border-success col-4 rounded">
-                            <img class="w-25" src="./imagen/Stars.png" alt="">
+                            <img class="w-25" src="../imagen/Stars.png" alt="">
                             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
                             <div class="d-flex">
-                                <img src="./imagen/avatar1.png" alt="">
+                                <img src="../imagen/avatar1.png" alt="">
                                 <p>Dianne Russell</p>
                                 <p>Starbucks</p>
                             </div>
                         </div>
                         <div class=" border border-success col-4 rounded">
-                            <img class="w-25" src="./imagen/Stars.png" alt="">
+                            <img class="w-25" src="../imagen/Stars.png" alt="">
                             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
                             <div class="d-flex">
-                                <img src="./imagen/avatar2.png" alt="">
+                                <img src="../imagen/avatar2.png" alt="">
                                 <p>Kristin Watson</p>
                                 <p>Louis Vuitton</p>
                             </div>
                         </div>
                         <div class=" border border-success col-4 rounded">
-                            <img class="w-25" src="./imagen/Stars.png" alt="">
+                            <img class="w-25" src="../imagen/Stars.png" alt="">
                             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
                             <div class="d-flex">
-                                <img src="./imagen/avatar3.png" alt="">
+                                <img src="../imagen/avatar3.png" alt="">
                                 <p>Kathryn Murphy</p>
                                 <p>McDonald's</p>
                             </div>
                         </div>
                     </div>
-                <section>
+                </section>
+
+                <section id="contact">
                     <div class="row">
                         <div>
                             <h4>Get in touch</h4>
@@ -222,6 +223,7 @@
                         </form>
                     </div>
                 </section>
+
             </div>
         </div>
     </main>
@@ -232,7 +234,7 @@
                 <div class="row">
                     <nav class="navbar navbar-expand-lg">
                         <div class="col-4">
-                            <img src="./imagen/Logo.png" alt="">
+                            <img src="../imagen/Logo.png" alt="">
                         </div>
                             <div  class="col-5 ">
                                 <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
