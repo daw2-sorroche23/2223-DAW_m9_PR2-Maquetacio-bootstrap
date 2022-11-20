@@ -6,54 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PR2 ​Maquetació amb Bootstrap</title>
     <link rel="stylesheet" href="../scss/custom.css">
-
-
-    
+    <!--Stilo de la letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/8737b21f11.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <div class="container-fluid">
             <div class="container">
-                <div class="row">
-                    <nav class="navbar navbar-expand-lg">
-                        <div class="col-4">
-                            <img class="w-25" src="../imagen/Logo.png" alt="">
-                        </div>
-                            <div  class="col-7">
-                                <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Portofolio</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">About Me</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Testimonials</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        <div class="col-1">
-                            <button>Contact Me</button>
-                        </div>
-                    </nav>
-                </div>
+                <nav class="row pt-3 mb-3">
+                    <div class="col-2">
+                      <a class="navbar-brand" href="#">
+                        <img src="../imagen/Logo.png" class="d-inline-block w-75 mt-1 pt-2">
+                      </a>
+                    </div>
+                    <div class="col-8">
+                      <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                          <a class="nav-link text-primary pt-3" href="#header">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark pt-3" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item negro">
+                          <a class="nav-link text-dark pt-3" href="#aboutMe">About Me</a>
+                        </li>
+                        <li class="nav-item negro">
+                          <a class="nav-link text-dark pt-3" href="#customer">Testimonials</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="border-primary rounded bg-white text-primary p-3 ml-5">Contact Me</button>
+                    </div>
+                </nav>
             </div>
         </div>
     </header>
     <main>
         <div class="container-fluid">
             <div class="container">
-                <section id="header">
-                    <div class="row">
+                <section id="header" class="bg-secondary">
+                    <div class="row header">
                         <div class="d-flex">
                             <div class="col-6">
-                                <h2 class="fs-2">Hey, I am John</h2>
-                                <h1 class="fs-1">I create <span class="text-primary">product design</span> and brand experience</h1>
+                                <h2 class="fs-2"><strong> Hey, I am John</strong></h2>
+                                <h1 class="fs-1"> <strong>I create <span class="text-primary">product design</span> and brand experience</strong></h1>
                                 <p class="fs-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                                <button class="btn-bd-primary"> <span class="fs-2">Get In Touch</span></button>
+                                <div class="pt-3">
+                                    <button class="btn-bd-primary"> <span class="fs-2">Get In Touch</span></button>
+                                </div>
                             </div>
                             <div class="col-6">
                                 <img src="../imagen/Group 11 1.png" class="img-fluid" alt="">
@@ -64,35 +70,36 @@
                 
                 <section id="skill">
                         <div class="row ">
-                            <div class="col-12 padding">
-                                <h4>My Skills</h4>
-                                <h1>My Expertise</h1>
+                            <div class="col-12 paddingTitulo">
+                                <h4 class="fs-2"><strong>My Skills</strong></h4>
+                                <h1 class="fs-4"><strong>My Expertise</strong></h1>
                             </div>
+                        </div>
 
-                            <div class="col-3">
-                                <img src="../imagen/product-chain 1.png" alt="">
-                                <h3>Strategy & Direction</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad optio quos at repellat iusto voluptatibus temporibus vero pariatur autem.</p>
+                        <div class="row gap">
+                            <div class="col bg-secondary paddingEtiquetas rounded border-bottom border-primary">
+                                <img src="../imagen/product-chain 1.png" alt=""  class="rounded shadow imagen bg-white">
+                                <h3 class="fw-bold paddingDiv">Strategy & Direction</h3>
+                                <p class="fs-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad optio quos at repellat iusto voluptatibus temporibus vero pariatur autem.</p>
                             </div>
                             
-                            <div class="col-3">
-                                <img src="../imagen/tag 1.png" alt="">
-                                <h3>Branding & Logo</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad optio quos at repellat iusto voluptatibus temporibus vero pariatur autem.</p>
+                            <div class="col bg-secondary paddingEtiquetas">
+                                <img src="../imagen/tag 1.png" alt="" class="rounded shadow imagen bg-white">
+                                <h3 class="fw-bold paddingDiv">Branding & Logo</h3>
+                                <p class="fs-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad optio quos at repellat iusto voluptatibus temporibus vero pariatur autem.</p>
                             </div>
 
-                            <div class="col-3">
-                                <img src="../imagen/feather-pen 1.png" alt="">
-                                <h3>UI & UX Design</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad optio quos at repellat iusto voluptatibus temporibus vero pariatur autem.</p>
+                            <div class="col bg-secondary paddingEtiquetas">
+                                <img src="../imagen/feather-pen 1.png" alt=""  class="rounded shadow imagen bg-white">
+                                <h3 class="fw-bold paddingDiv">UI & UX Design</h3>
+                                <p class="fs-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad optio quos at repellat iusto voluptatibus temporibus vero pariatur autem.</p>
                             </div>
 
-                            <div class="col-3">
-                                <img src="../imagen/arrows.png" alt="">
-                                <h3>Webflow Development</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad optio quos at repellat iusto voluptatibus temporibus vero pariatur autem.</p>
+                            <div class="col bg-secondary paddingEtiquetas">
+                                <img src="../imagen/arrows.png" alt=""  class="rounded shadow imagen bg-white">
+                                <h3 class="fw-bold paddingDiv">Webflow Development</h3>
+                                <p class="fs-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad optio quos at repellat iusto voluptatibus temporibus vero pariatur autem.</p>
                             </div>
-                            
                         </div>
                 </section>
 
@@ -101,74 +108,120 @@
                         <div class="col-6">
                             <img src="../imagen/About Me.png" class="img-fluid" alt="">
                         </div>
-                        <div class="col-6">
-                            <h4>About</h4>
-                            <h1>About Me</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repudiandae ut, qui veritatis eum aspernatur dolorum sit minima dignissimos temporibus eveniet ratione aliquid ipsa nemo veniam facilis quae sunt voluptates.</p>
+                        <div class="col-6 ps-5">
+                            <h4 class=" fw-bold fs-2">About</h4>
+                            <h1 class="fw-bold fs-4">About Me</h1>
+                            <p class="fs-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repudiandae ut, qui veritatis eum aspernatur dolorum sit minima dignissimos temporibus eveniet ratione aliquid ipsa nemo veniam facilis quae sunt voluptates.</p>
+                            <p class="fs-3">Sit turpis pretium eget maecenas. Vestibulum dolor mattis consectetur eget commodo vitae. Amet pellentesque sit pulvinar lorem mi a, euismod risus r.</p>
                         </div>
                     </div>
                 </section>
 
                 <section id="portfolio">
-                    <div class="row">
+                    <div class="row pb-3">
                         <div class="col-6">
-                            <h4>Recent Projects</h4>
-                            <h1>My Portfolio</h1>
+                            <h4 class=" fw-bold fs-2">Recent Projects</h4>
+                            <h1 class="fw-bold fs-4">My Portfolio</h1>
                         </div>
 
-                        <div class="col-6">
-                            <button>Visit my Dribble</button>
+                        <div class="col-6 d-flex justify-content-md-end mt-4">
+                            <button type="button" class="btn btn-success mb-4 h-50 mt-3 d-flex pt-3 pb-3">
+                                <a href="#header">
+                                    <i class="fa-solid fa-basketball bg-success boton text-white me-2 mt-1"></i>
+                                </a>
+                                <p class="text-white">Visit My Dribbble</p>
+                            </button>
                         </div>
-                        
-                        <div class="col-4 card"><img class="img-thumbnail" src="../imagen/Image.png" alt="">
-                            <h3>Ahuse</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                            <p>View In Dribbble</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card shadow" style="width: 100%;">
+                                <img src="../imagen/Image.png" alt="casa">
+                                <div class="card-body">
+                                  <h3 class="fw-bold">Ahuse</h3>
+                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                                  <a href="#">
+                                    <p class="fs-5">View In Dribbble</p>
+                                    <img src="../imagen/Vector3.png" alt="flecha">
+                                  </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-4 card"><img class="img-thumbnail" src="../imagen/Image(1).png" alt="">
-                            <h3>App Dashboard</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                            <p>View In Dribbble</p>
+                        <div class="col-4">
+                            <div class="card shadow" style="width: 100%;">
+                                <img src="../imagen/Image(1).png" alt="app">
+                                <div class="card-body">
+                                  <h3 class="fw-bold">App Dashboard</h3>
+                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                                  <a href="#">
+                                    <p class="fs-5 color-black">View In Dribbble</p>
+                                    <img src="../imagen/Vector3.png" alt="flecha">
+                                  </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-4 card"><img class="img-thumbnail" src="../imagen/Image(2).png" alt="">
-                            <h3>Easy Rent</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                            <p>View In Dribbble</p>
+                        <div class="col-4">
+                            <div class="card shadow" style="width: 100%;">
+                                <img src="../imagen/Image(2).png" alt="pc">
+                                <div class="card-body">
+                                  <h3><strong>Easy Rent</strong></h3>
+                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                                  <a href="#">
+                                    <p class="fs-5 pe-2 text-dark">View In Dribbble</p>
+                                    <img class="imagen2" src="../imagen/Vector3.png" alt="flecha">
+                                  </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
 
-                <section id="customer">
+                <section id="customer" class="bg-secondary">
                     <div class="row">
                         <div class="col-12">
-                            <h4>Clients Feedback</h4>
-                            <h1>Customer testimonial</h1>
+                            <h4 class="fw-bold fs-2">Clients Feedback</h4>
+                            <h1 class="fw-bold fs-4 pb-5">Customer testimonial</h1>
                         </div>
-                        <div class=" border border-success col-4 rounded">
-                            <img class="w-25" src="../imagen/Stars.png" alt="">
+                    </div>
+                    <div class="row gap">
+                        <div class=" border border-danger col rounded paddingComent">
+                            <img class="w-25 pb-4" src="../imagen/Stars.png" alt="">
                             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
                             <div class="d-flex">
-                                <img src="../imagen/avatar1.png" alt="">
-                                <p>Dianne Russell</p>
-                                <p>Starbucks</p>
+                                <div>
+                                    <img class="imagen3" src="../imagen/avatar1.png" alt="">
+                                </div>
+                                <div class="ps-2">
+                                    <h2 class="fw-bold fs-2">Dianne Russell</h2>
+                                    <h2 class="fs-2">Starbucks</h2>
+                                </div>
                             </div>
                         </div>
-                        <div class=" border border-success col-4 rounded">
-                            <img class="w-25" src="../imagen/Stars.png" alt="">
+                        <div class=" border border-danger col rounded paddingComent">
+                            <img class="w-25 pb-4" src="../imagen/Stars.png" alt="">
                             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
                             <div class="d-flex">
-                                <img src="../imagen/avatar2.png" alt="">
-                                <p>Kristin Watson</p>
-                                <p>Louis Vuitton</p>
+                                <div>
+                                    <img class="imagen3" src="../imagen/avatar2.png" alt="">
+                                </div>
+                                <div class="ps-2">
+                                    <h2 class="fw-bold fs-2">Kristin Watson</h2>
+                                    <h2 class="fs-2">Louis Vuitton</h2>
+                                </div>
                             </div>
                         </div>
-                        <div class=" border border-success col-4 rounded">
-                            <img class="w-25" src="../imagen/Stars.png" alt="">
+                        <div class=" border border-danger col rounded paddingComent">
+                            <img class="w-25 pb-4" src="../imagen/Stars.png" alt="">
                             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
                             <div class="d-flex">
-                                <img src="../imagen/avatar3.png" alt="">
-                                <p>Kathryn Murphy</p>
-                                <p>McDonald's</p>
+                                <div>
+                                    <img class="imagen3" src="../imagen/avatar3.png" alt="">
+                                </div>
+                                <div class="ps-2">
+                                    <h2 class="fw-bold fs-2">Kathryn Murphy</h2>
+                                    <h2 class="fs-2">McDonald's</h2>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -176,51 +229,61 @@
 
                 <section id="contact">
                     <div class="row">
-                        <div>
-                            <h4>Get in touch</h4>
-                            <h1>Contact Me</h1>
-                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
+                        <div class="col-12 text-center pb-5">
+                            <h4 class="fw-bold fs-2">Get in touch</h4>
+                            <h1 class="fw-bold fs-4">Contact Me</h1>
+                            <h2 class="fs-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
                         </div>
-
-                        <form>
-                            <div>
-                                <div class="row">
-
-                                    <div class="col-md-6">
-                                      <label>First name</label>
-                                      <input type="text" class="form-control" id="name" placeholder="Name">
+                         <div class="col-12 ">
+                            <form>
+                                <div class="mb-3 d-flex">
+                                    <div class="col-3 mx-auto me-2 pe-1 ps-1">
+                                        <label for="nombre" class="form-label">First name</label>
+                                        <input type="text" class="form-control border-primary" id="nombre">
                                     </div>
-
-                                    <div class="form-group col-md-6">
-                                      <label for="inputPassword4">Password</label>
-                                      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                    <div class="col-3 mx-auto ms-2 pe-1 ps-1">
+                                        <label for="apellido" class="form-label">Last name</label>
+                                        <input type="text" class="form-control border-primary" id="apellido" aria-describedby="apellido">
                                     </div>
-
-                                  
-                                  <div class="form-group col-12" >
-                                    <label for="inputAddress">Address</label>
-                                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                                  </div>
-
-                                  <div class="form-group col-12">
-                                    <label for="inputAddress2">Address 2</label>
-                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                                  </div>
-
-                                  <div class="form-group">
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="checkbox" id="gridCheck">
-                                      <label class="form-check-label" for="gridCheck">
-                                        Check me out
-                                      </label>
-                                    </div>
-                                  </div>
-
-                                  <button type="submit" class="btn btn-primary">Sign in</button>
-
                                 </div>
-                            </div>
-                        </form>
+                                <div class="mb-3 d-flex">
+                                    <div class="col-3 mx-auto me-2 pe-1 ps-1">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control border-primary" id="email" aria-describedby="email">
+                                    </div>
+                                    <div class="col-3 mx-auto ms-2 pe-1 ps-1">
+                                        <label for="phone" class="form-label">Phone number</label>
+                                        <input type="text" class="form-control border-primary" id="phone" aria-describedby="phone">
+                                    </div>
+                                </div>
+                                <div class="mb-3 d-flex">
+                                    <div class="col-7 mx-auto ps-5 pe-5">
+                                        <label class="form-label" for="inputGroupSelect01">Choose a topic</label>
+                                        <select class="form-select border-primary" id="topic">
+                                          <option selected>Select one...</option>
+                                          <option value="1">Topic 1</option>
+                                          <option value="2">Topic 2</option>
+                                          <option value="3">Topic 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3 d-flex">
+                                    <div class="col-7 mx-auto ps-5 pe-5">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                        <textarea class="form-control border-primary" id="exampleTextarea" rows="3" style="height: 210px;"></textarea>
+                                    </div>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <div class="col-6 mx-auto">
+                                        <input type="checkbox" class="form-check-input" id="terminos">
+                                        <label class="form-check-label" for="check">I accept the terms</label>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary botonInput">Submit</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </section>
 
@@ -230,33 +293,62 @@
 
     <footer>
         <div class="container-fluid">
-            <div class="container">
-                <div class="row">
-                    <nav class="navbar navbar-expand-lg">
-                        <div class="col-4">
-                            <img src="../imagen/Logo.png" alt="">
+            <div class="container bg-secondary">
+                <nav class="row pb-5">
+                    <div class="col-2">
+                      <a class="navbar-brand" href="#">
+                        <img src="../imagen/Logo.png" class="d-inline-block w-75 mt-1">
+                      </a>
+                    </div>
+                    <div class="col-8">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                              <a class="nav-link text-dark" href="#header">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-dark" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item negro">
+                              <a class="nav-link text-dark" href="#aboutMe">About Me</a>
+                            </li>
+                            <li class="nav-item negro">
+                                <a class="nav-link text-dark" href="#contact">Contact</a>
+                              </li>
+                            <li class="nav-item negro">
+                              <a class="nav-link text-dark" href="#customer">Testimonials</a>
+                            </li>
+                            <li class="nav-item negro">
+                                <a class="nav-link text-dark" href="#portfolio">Portfolio</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-2 d-flex justify-content-end">
+                        <div class="iconos pt-2">
+                            <i class="fa-brands fa-facebook-f"></i>
                         </div>
-                            <div  class="col-5 ">
-                                <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Portofolio</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">About Me</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Testimonials</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        <div class="col-3">Iconos</div>
-                    </nav>
+                        <div class="iconos pt-2">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="iconos pt-2">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="pt-2">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </nav>
+                <hr>
+                <div class="row">
+                    <div class="col-6">Made with 💖 by Airdokan</div>
+                    <div class="col-6">
+                        <ul class="nav justify-content-end">
+                            <li class="pe-3">Privacy Policy</li>
+                            <li class="pe-3">Terms of Service</li>
+                            <li class="pe-3">Cookies Settings</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </div>
+        </div>  
     </footer>
 </body>
 </html>
